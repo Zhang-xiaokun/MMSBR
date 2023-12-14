@@ -92,30 +92,6 @@ class HyperConv(Module):
 
         return id_embeddings, image_embeddings, text_embeddings, price_embeddings
 
-# class LineConv(Module):
-#     def __init__(self, layers,batch_size,emb_size=100):
-#         super(LineConv, self).__init__()
-#         self.emb_size = emb_size
-#         self.batch_size = batch_size
-#         self.layers = layers
-#     def forward(self, item_embedding, D, A, session_item, session_len):
-#         zeros = torch.cuda.FloatTensor(1,self.emb_size).fill_(0)
-#         # zeros = torch.zeros([1,self.emb_size])
-#         item_embedding = torch.cat([zeros, item_embedding], 0)
-#         seq_h = []
-#         for i in torch.arange(len(session_item)):
-#             seq_h.append(torch.index_select(item_embedding, 0, session_item[i]))
-#         seq_h1 = trans_to_cuda(torch.tensor([item.cpu().detach().numpy() for item in seq_h]))
-#         session_emb_lgcn = torch.div(torch.sum(seq_h1, 1), session_len)
-#         session = [session_emb_lgcn]
-#         DA = torch.mm(D, A).float()
-#         for i in range(self.layers):
-#             session_emb_lgcn = torch.mm(DA, session_emb_lgcn)
-#             session.append(session_emb_lgcn)
-#         session1 = trans_to_cuda(torch.tensor([item.cpu().detach().numpy() for item in session]))
-#         session_emb_lgcn = torch.sum(session1, 0)
-#         return session_emb_lgcn
-
 class MultiHeadSelfAttention(torch.nn.Module):
     def __init__(self, hidden_size, activate="relu", head_num=2, dropout=0, initializer_range=0.02):
         super(MultiHeadSelfAttention, self).__init__()
