@@ -22,7 +22,7 @@ Please cite our paper if you use our codes. Thanks!
 
 In case that you have any difficulty about the implementation or you are interested in our work,  please feel free to communicate with me by:
 
-Author: Xiaokun Zhang (kun@mail.dlut.edu.cn / ZhangXiaokun1993@foxmail.com)
+Author: Xiaokun Zhang (kun@mail.dlut.edu.cn / dawnkun1993@gmail.com)
 
 Also, welcome to visit my academic homepage:
 
