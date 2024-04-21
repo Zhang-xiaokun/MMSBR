@@ -17,6 +17,16 @@ We also uploaded all three preprocessed datasets under the folder 'datasets'. Yo
 
 Please cite our paper if you use our codes. Thanks!
 ```
+@article{MMSBR,
+  author={Zhang, Xiaokun and Xu, Bo and Ma, Fenglong and Li, Chenliang and Yang, Liang and Lin, Hongfei},
+  journal={IEEE Transactions on Knowledge and Data Engineering}, 
+  title={Beyond Co-Occurrence: Multi-Modal Session-Based Recommendation}, 
+  year={2024},
+  volume={36},
+  number={4},
+  pages={1450-1462},
+  keywords={Probabilistic logic;Behavioral sciences;Numerical models;Transformers;Semantics;Graph neural networks;Fuses;Hierarchical pivot transformer;multi-modal learning;probabilistic modeling;pseudo-modality contrastive learning;session-based recommendation},
+  doi={10.1109/TKDE.2023.3309995}}
 
 ```
 
